@@ -1,9 +1,17 @@
+import { Navbar, Services, Transactions, Welcome } from './components';
+import Footer from './components/Footer';
+
 const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world! a
-      </h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   );
 }
